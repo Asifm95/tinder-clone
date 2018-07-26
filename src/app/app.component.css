@@ -1,0 +1,14 @@
+body{
+    background-color: #f5f7fa;
+    
+}
+
+.text-left img{
+    position: absolute;
+    left: 10px;
+}
+
+.text-right img{
+    position: absolute;
+    right: 10px;
+}

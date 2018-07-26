@@ -1,0 +1,113 @@
+
+<div class="container profile-pic">
+    
+    <div class="row">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-12">
+                    <img src="https://images.unsplash.com/photo-1496275068113-fff8c90750d1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d3f3415561bc1b63cdc05b6501ba5d5&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt="">
+                    <a href="#" class="closes">
+                        <img src="https://thumb.ibb.co/htUquT/cancel.png" alt="error" border="0">
+                    </a>
+                </div>        
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-12">
+                    <img src="https://images.unsplash.com/photo-1520975608515-79b7d99750e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=510beca99278b81b30ca92aa904508d5&auto=format&fit=crop&w=1050&q=80"
+                        class="img-fluid" alt="">
+                    <a href="#" class="closes">
+                        <img src="https://thumb.ibb.co/htUquT/cancel.png" alt="error" border="0">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=56c7f9756b4386446903856e0fc99dd5&auto=format&fit=crop&w=1050&q=80"
+                    class="img-fluid" alt="">
+                    <a href="#" class="closes">
+                        <img src="https://thumb.ibb.co/htUquT/cancel.png" alt="error" border="0">
+                    </a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-4">
+                <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=56c7f9756b4386446903856e0fc99dd5&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt="">
+                <a href="#" class="closes">
+                    <img src="https://thumb.ibb.co/htUquT/cancel.png" alt="error" border="0">
+                </a>
+            </div>
+            <div class="col-4">
+                <img src="https://images.unsplash.com/photo-1517732306149-e8f829eb588a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f01588d10ff9d309abd7cf609fb7e265&auto=format&fit=crop&w=1052&q=80" class="img-fluid" alt="">
+                <a href="#" class="closes">
+                    <img src="https://thumb.ibb.co/htUquT/cancel.png" alt="error" border="0">
+                </a>
+            </div>
+            <div class="col-4">
+                <img src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0f994eef47e5fb1a67849703cc961b3&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt="">
+                <a href="#" class="closes">
+                    <img src="https://thumb.ibb.co/htUquT/cancel.png" alt="error" border="0">
+                </a>
+            </div>
+    </div>
+            
+</div>
+    
+
+<div class="edit mt-5 mb-4">
+    <form (ngSubmit)="saveData(form)" #form="ngForm">
+                <div class="mb-3">
+                    <label for="about">About Asif</label>
+                    <textarea type="text" id="about" class="form-control" name="about" 
+                    ngModel #about="ngModel" 
+                    required rows="4">
+                    </textarea>
+                    <!-- <small id="about" class="form-text text-muted" *ngIf="!name.valid && name.touched">
+                        Please enter a valid Ingredient.
+                    </small> -->
+                </div>
+                <div class="mb-3">
+                    <label for="job">Job Title</label>
+                    <input type="text" placeholder="Add title"
+                    class="form-control" id="job" name="job" ngModel #job="ngModel">
+                    <!-- <small id="amount" class="form-text text-muted" *ngIf="!amount.valid && amount.touched">
+                        Select an amount.
+                    </small> -->
+                </div>
+                <div class="mb-3">
+                    <label for="company">Company</label>
+                    <input type="text" placeholder="Add company"
+                    class="form-control" id="company" name="company" ngModel #company="ngModel">
+                    <!-- <small id="amount" class="form-text text-muted" *ngIf="!amount.valid && amount.touched">
+                        Select an amount.
+                    </small> -->
+                </div>
+                <div class="mb-3">
+                    <label for="school">School</label>
+                    <input type="text" placeholder="Add school" 
+                    class="form-control" id="school" name="school" ngModel #school="ngModel">
+                    <!-- <small id="amount" class="form-text text-muted" *ngIf="!amount.valid && amount.touched">
+                        Select an amount.
+                    </small> -->
+                </div>
+                <div class="mb-3">
+                    <label for="gender">Gender</label>
+                    <input type="text" class="form-control" id="gender" name="gender" ngModel #gender="ngModel">
+                    <!-- <small id="amount" class="form-text text-muted" *ngIf="!amount.valid && amount.touched">
+                        Select an amount.
+                    </small> -->
+                    <!-- <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+
+                    </select> -->
+                </div>
+
+                <button class="btn btn-primary submit" type="submit">Save</button>
+    </form>
+</div>
