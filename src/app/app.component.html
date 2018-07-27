@@ -1,14 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav class="nav nav-justified mb-2 mt-1">
-  <a class="nav-item text-left"  routerLink = "/profile">
-  <img src="https://thumb.ibb.co/h6cU3o/user_silhouette.png" alt="user_silhouette" border="0" width="24px" height="24px">
-  </a>
-  <a class="nav-item" routerLink ="/home">
-    <img img src="https://thumb.ibb.co/ju76Yo/tinder.png" alt="tinder" border="0" width="24px" height="24px">
-  </a>
-  <a class="nav-item text-right"  routerLink = "/messages">
-    <img src="https://thumb.ibb.co/h02tw8/chat.png" alt="chat" border="0" width="24px" height="24px">
-  </a>
-</nav>
+<div style="position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
+    background: rgb(245, 247, 250);">
 
+  <nav class="nav nav-justified mb-2 mt-1">
+    <a class="nav-item text-left"  routerLink = "/profile">
+      <img src="https://thumb.ibb.co/h6cU3o/user_silhouette.png" alt="user_silhouette" border="0" width="24px" height="24px">
+    </a>
+    <a class="nav-item" routerLink ="/home">
+      <img img src="https://thumb.ibb.co/ju76Yo/tinder.png" alt="tinder" border="0" width="24px" height="24px">
+    </a>
+    <a class="nav-item text-right"  routerLink = "/messages">
+      <img src="https://thumb.ibb.co/h02tw8/chat.png" alt="chat" border="0" width="24px" height="24px">
+    </a>
+  </nav>
+</div>
+  
 <router-outlet></router-outlet>

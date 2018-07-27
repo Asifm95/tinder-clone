@@ -78,20 +78,27 @@ body {
      color: #fff;
  }
 
+.card{
+    margin-top: 39px;
+
+}
 
  .card-content {
    position: relative;
-   color: #fff;
+   color: rgb(255, 255, 255);
    /* padding: 5px; */
    height: 530px;
-       background-color: rgb(245, 247, 250);
-
+    background-color: rgb(245, 247, 250);
+    border-radius: 5px;
  }
  
  .card-image {
    width: 100%;
    height: 100%;
+
  }
+
+
  .card-image img {
    border-radius: 10px;
    -o-object-fit: cover;

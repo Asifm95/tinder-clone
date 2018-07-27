@@ -12,3 +12,8 @@ body{
     position: absolute;
     right: 10px;
 }
+
+.nav{
+    /* position: fixed;
+    top: 0; */
+}

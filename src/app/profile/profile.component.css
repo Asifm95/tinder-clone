@@ -55,12 +55,13 @@ button.plus{
     border-bottom: 1px solid #8080806b;
 }
 
-.card-body h4{
+.card-body h5{
     letter-spacing: .02em;
-    font-weight: 500;
-    font-size: 2.4rem;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .card-body p{
     margin-bottom: 0%;
+    color: grey;
 }
