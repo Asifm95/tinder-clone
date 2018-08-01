@@ -11,12 +11,12 @@ import { DetailsComponent } from '../home/details/details.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'home/details', component: DetailsComponent},
-  {path: 'profile', component: ProfileComponent},
-  {path: 'messages', component: MessagesComponent},
-  {path: 'profile/edit', component: ProfileEditComponent},
-  {path: 'profile/settings', component: ProfileSettingsComponent}
+  {path: 'home', component: HomeComponent, data: {depth: 1 }},
+  { path: 'home/details', component: DetailsComponent, data: { depth: 4 }},
+  { path: 'profile', component: ProfileComponent, data: { depth: 3 }},
+  { path: 'messages', component: MessagesComponent, data: { depth: 2 }},
+  { path: 'profile/edit', component: ProfileEditComponent, data: { depth: 5 }},
+  { path: 'profile/settings', component: ProfileSettingsComponent, data: { depth: 6 }}
 ];
 
 @NgModule({

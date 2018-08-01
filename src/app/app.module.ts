@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppRoutesModule } from './app-routes/app-routes.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { SwingModule } from 'angular2-swing';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -24,7 +27,11 @@ import { ProfileSettingsComponent } from './profile/profile-settings/profile-set
   imports: [
     BrowserModule,
     AppRoutesModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    HttpModule,
+    SwingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

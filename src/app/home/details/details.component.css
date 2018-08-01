@@ -1,7 +1,10 @@
+@import 'animation.css';
+
 .profile {
     position: relative;
     max-width: 800px;
     margin: auto;
+    z-index: 3;
 }
 
 .profile.card{
@@ -86,4 +89,16 @@ box-shadow: 0px 3px 10px 0.5px rgba(153,150,150,0.3);
             justify-content: space-evenly;
     padding: 10px;
     min-width: 200px;
+}
+
+.left{
+    animation: bounceInLeft .5s;
+}
+.up{
+    animation: bounceInUp .5s;
+}
+
+.right{
+    animation: bounceInRight .5s;
+    
 }

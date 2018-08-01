@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { HomeService } from './home.service';
+import { Home } from './home.modal';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +9,11 @@ import { HomeService } from './home.service';
 })
 export class HomeComponent implements OnInit {
 
-  innerWidth: any;
-  @HostListener('window:resize') onResize() {
-    this.innerWidth = window.innerWidth;
-    console.log(this.innerWidth);
-  }
+  people: Home[];
   constructor(private homeservice: HomeService) {
-
     }
   ngOnInit() {
+    this.people = this.homeservice.getpeople();
   }
 
 }

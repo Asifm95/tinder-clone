@@ -13,7 +13,10 @@ body{
     right: 10px;
 }
 
-.nav{
-    /* position: fixed;
-    top: 0; */
+.route-container{ 
+    position: relative;
+}
+
+.route-container>*{
+    display: block;
 }
